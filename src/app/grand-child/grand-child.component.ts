@@ -12,4 +12,16 @@ export class GrandChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fullName ="";
+  fname ="";
+  lname ="";
+
+  onSave() {
+    console.log("On Save Function Clicked");
+  }
+
+  showFullName(){
+      this.fullName = this.fname +" "+ this.lname;
+  }
+
 }

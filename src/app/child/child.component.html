@@ -1,3 +1,10 @@
-<h2>Welcome to Child Component!!</h2>
-<button class="btn btn-primary">Bootstarp Button</button>
-<grandChild></grandChild>
+<h2>Form Using One way Data Binding</h2>
+
+
+<label for="fname">First Name </label> : <input name="fname" id="fname" [value]="fname" class="form-control input col-md-3"> <br/>
+<label for="lname">Last Name </label> : <input name="lname" id="lname" [value]="lname" class="form-control input col-md-3"> 
+<br/>
+<button (click)="showName()" class="btn btn-primary"> Show Full Name</button>
+<br/>
+
+{{fullName}}

@@ -12,4 +12,16 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fullName ="";
+  fname ="Neha";
+  lname ="Shettar";
+
+  onSave() {
+    console.log("On Save Function Clicked");
+  }
+
+  showName(){
+      this.fullName = this.fname +" "+ this.lname;
+  }
+
 }

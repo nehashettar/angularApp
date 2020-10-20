@@ -1,0 +1,13 @@
+
+<div style="background-color: aliceblue;">
+    <h3> ngOnInit and ngOnChange</h3><br/>
+
+    Enter name: <input type="text" [(ngModel)]="myVal"> <br/><br/>
+
+    <app-p-child *ngIf="isVisible" [propValue]="myVal" [Name]="name"></app-p-child>
+    <br/>
+ 
+    <button class="btn btn-primary" (click)="updateName()">Update Name</button>&nbsp;&nbsp;
+
+    <button class="btn btn-secondary" (click)="toggleChildComp()">Show/Hide Child Component</button>
+        

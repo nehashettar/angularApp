@@ -1,0 +1,27 @@
+
+ <h3>ng-if and ngsStyle Directive</h3> 
+ Enter Age: <input type="text" [(ngModel)]="age" (blur)="checkAge()"> <br/><br/>
+ <span *ngIf="isEligible" [ngStyle]="{'color':isEligible ? 'green' : 'red' }">
+     You can Vote!!
+ </span>
+ <span *ngIf="!isEligible" [ngStyle]="{'color':isEligible ? 'green' : 'red' }">
+    You can not Vote!!
+ </span>
+ <h3>ng-for Directive</h3> 
+
+ <ul *ngFor="let state of states">
+    <li>{{ state.name }}</li>
+  </ul>
+
+ <h3>ng-switch Directive</h3> 
+<ul *ngFor="let number of numbers" [ngSwitch]="number%2">
+    <li *ngSwitchCase="1" [ngClass]="'text-success'">
+        {{number}} is ODD
+    </li>
+    <li *ngSwitchCase="0" [ngClass]="'text-primary'">
+        {{number}} is EVEN
+    </li>
+</ul>
+
+<span appHighlight>My Custom Directive</span> 
+      

@@ -9,6 +9,8 @@ import { ParentComponent } from './parent/parent.component';
 import { PChildComponent } from './p-child/p-child.component';
 import { DircComponent } from './dirc/dirc.component';
 import { HighlightDirective } from './highlight.directive';
+import { LoginComponent } from './login/login.component';
+import { LoginChildComponent } from './login-child/login-child.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HighlightDirective } from './highlight.directive';
     PChildComponent,
     DircComponent,
     HighlightDirective,
+    LoginComponent,
+    LoginChildComponent,
 
   ],
   imports: [

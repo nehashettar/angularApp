@@ -11,6 +11,8 @@ import { DircComponent } from './dirc/dirc.component';
 import { HighlightDirective } from './highlight.directive';
 import { LoginComponent } from './login/login.component';
 import { LoginChildComponent } from './login-child/login-child.component';
+import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
+import { UserTitlePipe } from './user-title.pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { LoginChildComponent } from './login-child/login-child.component';
     HighlightDirective,
     LoginComponent,
     LoginChildComponent,
+    AngularPipesComponent,
+    UserTitlePipe,
 
   ],
   imports: [
